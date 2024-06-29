@@ -1,0 +1,32 @@
+.weather__card {
+background-color: var(--primary-color);
+border-radius: 16px;
+padding: 16px;
+height: 200px;
+width: 300px
+}
+.weather-card__type {
+    color: white;
+    font-weight: 200;
+    font-size: 36px;
+}
+.weather-card__value {
+    color: white;
+    margin-top: 16px;
+    font-size: 32px;
+}
+.weather-card__deg {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+@media screen and (max-width:1304px) {
+    .weather__card { 
+      width: 200px;
+    }
+}
+@media screen and (max-width:904px) {
+    .weather__card { 
+      width: 350px;
+    }
+}

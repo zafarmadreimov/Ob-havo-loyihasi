@@ -1,0 +1,21 @@
+.custom-input {
+    padding: 8px 12px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+}
+.custom-input:focus-visible {
+    outline: none;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    padding:8px 12px ;
+}
+.search__icon {
+    cursor: pointer;
+}
