@@ -18,6 +18,7 @@ const getWeather = async (city: string): Promise<IWeather | null> => {
     // Ob-havo ma'lumotlarini olish
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`);
     const data = await res.json();
+    console.log(data);
     return data;
   } catch (error) {
     console.error("Ob-havo ma'lumotlarini olishda xatolik: ", error);

@@ -11,9 +11,9 @@ interface IWeather {
     }
 
     weather: {
-        description:string;
-        icon:string;
-    }
+        main:string;
+
+    }[]
 
 }
 export default IWeather;
