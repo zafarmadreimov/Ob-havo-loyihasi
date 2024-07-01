@@ -1,36 +1,44 @@
 .current-weather {
     background-color: white;
     padding: 32px;
-    min-height: 80vh;
-    border-radius: 16px; 
+    height: auto; /* min-height o'rniga height */
+    border-radius: 16px;
     width: 50%;
-}
-.current-weather__icon {
+    display: flex; /* Flexbox qo'shildi */
+    flex-direction: column; /* Kolonna yo'nalishi qo'shildi */
+    justify-content: center; /* Vertikal markazda joylashtirish */
+  }
+  
+  .current-weather__icon {
     width: 256px;
     height: 256px;
     display: block;
     margin: 0 auto;
-}
-.current-weather__degree {
+  }
+  
+  .current-weather__degree {
     font-size: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.divider {
+  }
+  
+  .divider {
     width: 80%;
     height: 10px;
     background-color: var(--background-color);
     margin: 0 auto;
-    border-radius:32px ;
+    border-radius: 32px;
     margin-top: 32px;
-}
-.current-weather__status,
-.current-weather__city {
+  }
+  
+  .current-weather__status,
+  .current-weather__city {
     text-align: center;
     font-size: 32px;
     margin-top: 16px;
-}
-.current-weather__city {
+  }
+  
+  .current-weather__city {
     margin-top: 32px;
-}
+  }

@@ -1,32 +1,105 @@
 .weather__card {
-background-color: var(--primary-color);
-border-radius: 16px;
-padding: 16px;
-height: 200px;
-width: 300px
-}
-.weather-card__type {
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    padding: 16px;
+    height: 200px;
+    width: 300px;
+  }
+  
+  .weather-card__type {
     color: white;
     font-weight: 200;
     font-size: 36px;
-}
-.weather-card__value {
+  }
+  
+  .weather-card__value {
     color: white;
     margin-top: 16px;
     font-size: 32px;
-}
-.weather-card__deg {
+  }
+  
+  .weather-card__deg {
     color: white;
     font-size: 18px;
     margin-top: 10px;
-}
-@media screen and (max-width:1304px) {
-    .weather__card { 
+  }
+  
+  @media screen and (max-width: 1304px) {
+    .weather__card {
       width: 200px;
     }
-}
-@media screen and (max-width:904px) {
-    .weather__card { 
+  }
+  
+  @media screen and (max-width: 904px) {
+    .weather__card {
       width: 350px;
     }
-}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .current-weather, .weather__details {
+      width: 100%;
+    }
+  
+    .current-weather__icon {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .current-weather__degree {
+      font-size: 48px;
+    }
+  
+    .current-weather__status,
+    .current-weather__city {
+      font-size: 24px;
+    }
+  
+    .weather-card__type {
+      font-size: 28px;
+    }
+  
+    .weather-card__value {
+      font-size: 24px;
+    }
+  
+    .weather-card__deg {
+      font-size: 14px;
+    }
+    .weather__card {
+        width: 250px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .current-weather__icon {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .current-weather__degree {
+      font-size: 36px;
+    }
+  
+    .current-weather__status,
+    .current-weather__city {
+      font-size: 18px;
+    }
+  
+    .weather-card__type {
+      font-size: 20px;
+    }
+  
+    .weather-card__value {
+      font-size: 18px;
+    }
+  
+    .weather-card__deg {
+      font-size: 12px;
+    }
+  }
