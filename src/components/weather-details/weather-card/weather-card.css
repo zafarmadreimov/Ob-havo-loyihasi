@@ -75,7 +75,11 @@
         width: 250px;
     }
   }
-  
+  @media screen and (max-width: 520px) {
+    .weather__card {
+      width: 200px;
+    }
+}
   @media screen and (max-width: 480px) {
     .current-weather__icon {
       width: 150px;
@@ -102,4 +106,9 @@
     .weather-card__deg {
       font-size: 12px;
     }
+  }
+  @media screen and (max-width: 438px) {
+   .weather__card {
+    width: 165px;
+   }
   }
